@@ -53,6 +53,19 @@ body {
 }
 
 .logo {
-    width: 10vh;
+    width: 20vh;
+    height: auto;
+    align-items: left;
+}
+
+.macetero-1 {
+    padding: 20px;
+    width: 20vw;
+    height: auto;
+}
+
+.macetero-2 {
+    padding: 20px;
+    width: 20vw;
     height: auto;
 }
