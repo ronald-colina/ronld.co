@@ -1,0 +1,76 @@
+.my-row {
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.vacio {
+    height: 50px;
+}
+
+.secciones {
+    justify-content: right;   
+    text-decoration: none;
+    color: black;
+}
+
+.secciones-1 {
+    text-decoration: none;
+    color: black;  
+
+}
+
+.secciones-2 {
+    text-decoration: none; 
+    color: black;
+
+}
+
+.secciones-1 a:hover {
+    color: #FF3300;
+
+}
+
+.secciones-2 a:hover {
+    color: #0099FF;
+
+}
+
+.logo {
+    width: 20vh;
+    height: auto;
+    align-items: left;
+}
+
+.logocera {
+    width: auto;
+    height: 10vh;
+}
+
+
+.macetero-1 {
+    padding: 1px;
+    width: 25vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.macetero-2 {
+    padding: 20px;
+    width: 20vw;
+    height: auto;
+}
+
+.xilo {
+    width: 25vw;
+    height: auto;
+}
+
+.dibujo {
+    width: 20vw;
+    height: auto;
+}
