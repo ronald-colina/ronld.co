@@ -4,13 +4,20 @@
     border: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding-left: 0;
+    font-size: 10rem;
 
 
     .dibujo img {
         width: 50vh;
         height: auto;
         padding: 10px;
+        padding-left: 0;
+    }
+
+    .dibujos__titulo {
+        color: yellow;
+        font-size: 10rem;
     }
 }
