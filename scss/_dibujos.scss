@@ -1,0 +1,16 @@
+.container-fluid__dibujos {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+
+
+    .dibujo img {
+        width: 50vh;
+        height: auto;
+        padding: 10px;
+    }
+}

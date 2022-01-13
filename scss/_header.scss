@@ -3,12 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 65x;
+    height: 80px;
     width: 100vw;
-    padding: 0 10vw;
+    padding: 5vw 5vw;
     color: #000;
     z-index: 1;
     transition: .4s ease-out;
+    max-height: 100%;
 
     a {
         text-decoration: none;
@@ -24,7 +25,7 @@
 
         .nav-link {
             a {
-                margin: .2rem;
+                margin: .2rem;
                 padding: 1rem .5rem;
             }
             a:hover {
@@ -55,25 +56,31 @@
                 height: 100%;
                 width: 100%;
                 border-radius: 4px;
-                background: #fff;
+                background: #000;
                 transition: background .8s ease;
             }
 
             &::before {
-                transform: translate(-5px)
+                transform: translateY(-5px);
             }
             &::after {
-                transform: translate(5px)
+                transform: translateY(5px);
             }
         }
     }
+
+    .logo img {
+        height: 6vh;
+        width: auto;
+    }
+
     .menu-btn {
         display: none;
     }
 
     &.scrolled {
         height: 50px;
-        background: rgba(0,0,0,0,0.9);
+        background: rgba(0,0,0,0.9);
         color: #fff;
 
         .menu-icon {
@@ -84,10 +91,4 @@
             }
         }
     }
-
-    .logo img {
-        height: 7vh;
-        width: auto;
-    }
-    
 }

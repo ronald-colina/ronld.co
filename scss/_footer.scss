@@ -1,0 +1,23 @@
+#footer {
+    background-color: #000;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: #000;
+
+    .footer-link {
+        a {
+            margin: .2rem;
+            padding: 1rem .5rem;
+            color: white;
+            text-decoration: none;
+
+        }
+        a:hover {
+            color: yellow;
+        }
+    }
+}
