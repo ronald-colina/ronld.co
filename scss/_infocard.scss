@@ -1,0 +1,24 @@
+.informacion__general {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .infocard__1 {
+        width: 50vw;
+        height: auto;
+        text-align: center;
+
+        p {
+            font-size: 2rem;
+        }
+    }
+
+    .infocard-img {
+        height: auto;
+        width: 50vw;
+    }
+    
+}
