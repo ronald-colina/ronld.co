@@ -140,7 +140,47 @@
   background: #fff;
 }
 
+.container-titulo {
+  height: 50vh;
+  font-size: 7rem;
+  color: #0F9AF8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .container-fluid__dibujos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-fluid__dibujos .dibujo-titulo {
+  font-size: 2em;
+  text-align: center;
+}
+
+.container-fluid__dibujos .container-dibujos1,
+.container-fluid__dibujos .container-dibujos2,
+.container-fluid__dibujos .container-dibujos3,
+.container-fluid__dibujos .container-dibujos4 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -152,29 +192,25 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-flex: nowrap;
+      -ms-flex: nowrap;
+          flex: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 6rem;
 }
 
-.container-fluid__dibujos .dibujo img {
-  width: 50vh;
+.container-fluid__dibujos .container-dibujos1 .dibujo img,
+.container-fluid__dibujos .container-dibujos2 .dibujo img,
+.container-fluid__dibujos .container-dibujos3 .dibujo img,
+.container-fluid__dibujos .container-dibujos4 .dibujo img {
+  width: 40vh;
   height: auto;
   padding: 10px;
-}
-
-.hero__dibujo {
-  background-color: darkblue;
-}
-
-.dibujos__titulo {
-  color: yellow;
-  height: 100vh;
-  width: auto;
-  background-color: darkblue;
 }
 
 #footer {
@@ -221,6 +257,7 @@
 }
 
 .informacion__general .infocard__1 {
+  padding: 30px;
   width: 50vw;
   height: auto;
   text-align: center;
@@ -235,8 +272,22 @@
   width: 50vw;
 }
 
+.contact-tittle {
+  padding: 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0F9AF8;
+}
+
 .contact-form {
-  background-color: darkgoldenrod;
+  background-color: #0F9AF8;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,19 +298,55 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.contact-form form {
   width: 100vw;
+  max-width: 600px;
 }
 
 .contact-form .input-group {
   margin-bottom: 30px;
+  position: relative;
 }
 
 .contact-form input, .contact-form textarea {
+  width: 100%;
   padding: 10px;
   outline: 0;
   border: 1px solid #fff;
   color: #fff;
   background: transparent;
+  font-size: 15px;
+}
+
+.contact-form label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: #fff;
+  cursor: text;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contact-form button {
+  padding: 10px 0;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  cursor: pointer;
+}
+
+.contact-form input:focus ~ label,
+.contact-form input:valid ~ label,
+.contact-form textarea:focus ~ label,
+.contact-form textarea:valid ~ label {
+  top: -35px;
   font-size: 15px;
 }
 
