@@ -2,10 +2,13 @@
     height: 50vh;
     font-size: 7rem;
     color: #0F9AF8;
+    font-weight: bold;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 
@@ -18,13 +21,13 @@
     .dibujo-titulo {
         font-size: 2em;
         text-align: center;
+        margin-bottom: 10px;
         }
 
     .container-dibujos1, 
     .container-dibujos2,
     .container-dibujos3,
     .container-dibujos4 {
-        margin: 0;
         padding: 0;
         border: 0;
         width: 100%;
