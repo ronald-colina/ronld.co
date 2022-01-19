@@ -208,8 +208,26 @@
 .container-fluid__dibujos .container-dibujos2 .dibujo img,
 .container-fluid__dibujos .container-dibujos3 .dibujo img,
 .container-fluid__dibujos .container-dibujos4 .dibujo img {
-  width: 40vh;
+  width: 30vw;
   height: auto;
+  padding: 10px;
+}
+
+.container-fluid__dibujos .container-dibujos1 .oleo img,
+.container-fluid__dibujos .container-dibujos2 .oleo img,
+.container-fluid__dibujos .container-dibujos3 .oleo img,
+.container-fluid__dibujos .container-dibujos4 .oleo img {
+  height: auto;
+  width: 45vw;
+  padding: 10px;
+}
+
+.container-fluid__dibujos .container-dibujos1 .oleo2 img,
+.container-fluid__dibujos .container-dibujos2 .oleo2 img,
+.container-fluid__dibujos .container-dibujos3 .oleo2 img,
+.container-fluid__dibujos .container-dibujos4 .oleo2 img {
+  height: auto;
+  width: 45vw;
   padding: 10px;
 }
 
