@@ -7,17 +7,21 @@
     list-style: none;
     justify-content: space-around;
     background-color: #000;
+}
 
-    .footer-link {
-        a {
-            margin: .2rem;
-            padding: 1rem .5rem;
-            color: white;
-            text-decoration: none;
+//MAPAS
+a { text-decoration: none; margin: 2rem; padding: 1rem .5rem}
+a:hover { color: white; }
 
-        }
-        a:hover {
-            color: yellow;
-        }
+$colores: (
+    instagram: #ffdc7d,
+    facebook: #4267B2,
+    spotify: #1DB954,
+    twitter: #00acee,
+);
+
+@each $valor, $color in $colores {
+    .#{$valor} {
+        color: $color;
     }
 }

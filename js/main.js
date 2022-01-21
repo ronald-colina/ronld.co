@@ -1,4 +1,4 @@
-const header = document.querySelector('main-header');
+const header = document.querySelector('.main-header');
 
 window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
@@ -6,6 +6,6 @@ window.addEventListener('scroll', () => {
         header.classList.add('scrolled');
     } 
     else {
-        header.classList.remove('scrolled')
+        header.classList.remove('scrolled');
     }
 })

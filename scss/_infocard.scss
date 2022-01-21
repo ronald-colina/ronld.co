@@ -7,14 +7,7 @@
     align-items: center;
 
     .infocard__1 {
-        padding: 30px;
-        width: 50vw;
-        height: auto;
-        text-align: center;
-
-        p {
-            font-size: 2rem;
-        }
+        @extend %text;
     }
 
     .infocard-img {

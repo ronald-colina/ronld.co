@@ -1,33 +1,10 @@
-.container-titulo {
-    height: 50vh;
-    font-size: 7rem;
-    color: #0F9AF8;
-    font-weight: bold;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-}
-
-
 .container-fluid__dibujos {
     display: flex;
     flex: wrap;
     flex-direction: column;
     align-items: center;
-    
-    .dibujo-titulo {
-        font-size: 2em;
-        text-align: center;
-        margin-bottom: 10px;
-        }
 
-    .container-dibujos1, 
-    .container-dibujos2,
-    .container-dibujos3,
-    .container-dibujos4 {
+    @mixin dibujos {
         padding: 0;
         border: 0;
         width: 100%;
@@ -37,26 +14,43 @@
         justify-content: center;
         align-items: center;
         font-size: 6rem;
-
+    }
+    .container-dibujos1 {
+        @include dibujos;
+    }
+    .container-dibujos2 {
+        @include dibujos;
+    }
+    .container-dibujos3 {
+        @include dibujos;
+    }
+    .container-dibujos4 { 
+        @include dibujos;
+    }
+    
+    @mixin imagenes ($ancho){
+        width: $ancho;
+        height: auto;
+        padding: 10px;
+    }
         .dibujo img {
-            width: 30vw;
-            height: auto;
-            padding: 10px;
+            @include imagenes(30vw);
         }
 
         .oleo img {
-            height: auto;
-            width: 45vw;
-            padding: 10px;
+            @include imagenes(45vw);
         }
 
         .oleo2 img {
-            height: auto;
-            width: 45vw;
-            padding: 10px;
+            @include imagenes(45vw);
         }
-    
-    }
-    
+
+        .foto-ronld img {
+            @include imagenes (80vw);
+        }
+        
+        .infocard-img {
+            @include imagenes(50vw);
+        } 
 }
 

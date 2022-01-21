@@ -1,0 +1,48 @@
+/* VARIABLES */
+$amarillo: #FFFE54;
+$azul: #0F9AF8;
+$rojo: #FC2218;
+$negro: black;
+
+/* TÍTULOS */
+@mixin titulo ($color) {
+    height: 50vh;
+    font-size: 5rem;
+    font-weight: bolder;
+    color: $color;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.xilo-titulo {
+    @include titulo ($amarillo);
+}
+
+.sobremi-titulo {
+    @include titulo ($negro);
+}
+
+.ceramica-titulo {
+    @include titulo ($rojo);
+}
+
+.dibujos-titulo {
+    @include titulo ($azul);
+}
+
+
+/* SUBTÍTULOS */
+@mixin subtitulos {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dibujo-titulo {
+    @include subtitulos();
+}
+
