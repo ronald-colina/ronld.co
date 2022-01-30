@@ -1,11 +1,11 @@
 @keyframes pulse {
     from {
-        box-shadow: 0 0 0 0px rgba(255,255,255,0.6);
-        background: rgba(255,255,255,0.6);
+        box-shadow: 0 0 0 0px rgba(255,255, 255,0.6);
+        background: rgba(255,255, 255 0.6);
     }
     to {
-        box-shadow: 0 0 0 1000px rgba(255,255,255,0);
-        background: rgba(255,255,255,0);
+        box-shadow: 0 0 0 1000px rgba(255,255, 255, 0);
+        background: rgba(255,255, 255, 0);
     }
 }
 
@@ -40,9 +40,6 @@
 }
 
 @keyframes openMid {
-    0% {
-        transform: rotate(0deg);
-    }
     50% {
         transform: rotate(0deg);
     }
@@ -52,9 +49,6 @@
 }
 
 @keyframes closedMid {
-    0% {
-        transform: rotate(0deg);
-    }
     50% {
         transform: rotate(0deg);
     }
@@ -70,7 +64,7 @@
     }
     50% {
         transform: translateY(0px)
-            otate(0deg);
+        rotate(0deg);
     }
     100% { 
         transform: translateY(0px)
@@ -85,7 +79,7 @@
     }
     50% {
         transform: translateY(0px)
-            otate(0deg);
+        rotate(0deg);
     }
     100% { 
         transform: translateY(0px)
